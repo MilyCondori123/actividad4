@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Solicitar al usuario que ingrese un número
+var numero = prompt("Ingresa un número:");
+
+
+numero = Number(numero);
+
+// Verificar si el número es divisible entre 3, 5 o ambos
+if (numero % 3 === 0 && numero % 5 === 0) {
+     // Si es divisible entre 3 y 5, mostramos un mensaje
+    alert("El número es divisible entre 3 y 5.");
+} else if (numero % 3 === 0) {
+    // Si es divisible solo entre 3, mostramos el mensaje correspondiente
+    alert("El número es divisible entre 3.");
+} else if (numero % 5 === 0) {
+     // Si es divisible solo entre 5, mostramos el mensaje correspondiente
+    alert("El número es divisible entre 5.");
+} else {
+     // Si no es divisible entre ninguno, mostramos este mensaje
+    alert("El número no es divisible ni entre 3 ni entre 5.");
+}
+// Mostrar una lista de números divisibles entre 3 o 5 en el rango de 1 al número ingresado
+
+let divisibles = []; 
+
+for (let i = 1; i <= numero; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+        divisibles.push(i); 
+    }
+}
+
+
+if (divisibles.length > 0) {
+    alert("Números divisibles entre 3 o 5 en el rango de 1 a " + numero + ": " + divisibles.join(", "));
+} else {
+    alert("No hay números divisibles entre 3 o 5 en el rango de 1 a " + numero + ".");
+}
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    // Solicitar la edad y el salario mensual al usuario
+        var edad = prompt("Ingresa tu edad:");
+        
+        
+        let salario = prompt("Ingresa tu salario mensual:");
+        // Convertir los valores ingresados a números
+        edad = Number(edad);
+        salario = Number(salario);
+        
+        // Verificar si cumple con los requisitos para aplicar a un crédito bancario
+        if (edad > 25 && salario > 3000) {
+
+             // Si la edad es mayor a 25 años y el salario es superior a 3000, muestra el mensaje
+            alert("Puedes aplicar a un crédito bancario.");
+        } else {
+              // Si no cumple con las condiciones, se muestra un mensaje indicando que no cumple
+            alert("No cumples con los requisitos para aplicar a un crédito bancario.");
+        }
+        </script>
+    
+</body>
+</html>
